@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
                         </form>
 
                         <?php if ($bmi): ?>
-                            <div class="alert alert-info mt-4">
+                            <div class="alert alert-<?= $warna ?> mt-4">
                                 <strong>BMI Anda:</strong> <?= $bmi ?><br>
                                 <strong>Kategori:</strong> <?= $kategori ?>
                             </div>
